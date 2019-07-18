@@ -26,7 +26,7 @@ const getComputerChoice = (playerChoice) => {
     let computerChoices = ['rock', 'paper', 'scissors']
     let index = Math.floor(Math.random() * 3)
     let computerChoice = computerChoices[index]
-    innerRight.innerHTML = `<h3>The Computer chose ${computerChoice}.</h3>`
+    innerRight.innerHTML = `<h3>The Computer choses ${computerChoice}.</h3>`
 
     let outcome = getOutcome(playerChoice, computerChoice)
     innerCenter.innerHTML = `<h3>${outcome}</h3>`
