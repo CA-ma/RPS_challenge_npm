@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.player {
+    width: 250px;
+    min-width: 250px;
+    text-align: center;
+}
+
+.button-player {
+    border: black solid 1px;
+    width: 140px;
+    margin: 10px 0 0 75px;
+    border-radius: 10px;
+    background: rgb(78, 0, 0);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-player:hover {
+    background: rgb(134, 1, 1);
+    transition:.25s;
+}
+
+.button-player-selected{
+    border: black solid 1px;
+    width: 140px;
+    margin: 10px 0 0 75px;
+    border-radius: 10px;
+    background-color: rgb(134, 1, 1);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-player-not-selected{
+    border: black solid 1px;
+    width: 140px;
+    margin: 10px 0 0 75px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-left {
+    min-width: 250px;
+    width: 250px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.inner-center {
+    min-width: 500px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.inner-right {
+    min-width: 250px;
+    width: 250px;
+    min-height: 50px;
+    text-align: center;
+}
