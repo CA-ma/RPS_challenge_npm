@@ -2,7 +2,7 @@
   "name": "challengerockpaperscissornpm",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.html",
+  "main": "index.js",
   "scripts": {
     "test": "npm run features && npm run specs",
     "features": "superstatic src -p 8080 & mocha --timeout 100000 --recursive  --reporter=spec features ; PORT=8080 npm run stop-test-server",
