@@ -26,5 +26,8 @@
   "bin": {
     "training-wheels:generate": "node ./node_modules/e2e_training_wheels/dist/generators.js",
     "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
+  },
+  "dependencies": {
+    "server": "^1.0.19"
   }
 }
