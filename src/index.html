@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Puppeteer Mocha Scaffold</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>RPS</title>
 </head>
+
 <body>
-    <!-- Place your content here -->
+  <div class="title" style="text-align: center; margin-top:10vh">
+    <h3>Rock</h3>
+    <h2>Paper</h2>
+    <h1>Scissors!</h1>
+  </div>
+
+  <div class="container">
+    <div id="player1" class="player">
+      <h1>Player 1</h1>
+      <button id="button-player-rock" class="button-player">
+        <h2>Rock</h2>
+      </button>
+      <button id="button-player-paper" class="button-player">
+        <h2>Paper</h2>
+      </button>
+      <button id="button-player-scissors" class="button-player">
+        <h2>Scissors</h2>
+      </button>
+    </div>
+    <div class="img">
+      <img src="./img/pbr.jpg" alt="center image">
+    </div>
+    <div id="player2" class="player">
+      <h2>Computer</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="inner-left"></div>
+    <div class="inner-center"></div>
+    <div class="inner-right"></div>
+  </div>
+
+  <script src="./js/app.js"></script>
+
 </body>
+
 </html>
