@@ -16,7 +16,3 @@ I want to choose rock, paper, or scissors each round.
 As a player of RPS,
 In order to see the outcome of the round,
 I want to have a visual cue of who is the winner.
-
-As a player of RPS,
-In order to see my record,
-I want to see my win/loss ratio.
