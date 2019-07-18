@@ -1,4 +1,4 @@
-let imagePath = "./src/img/pbr.jpg"
+let imagePath = "./img/pbr.jpg"
 document.getElementById("image").src = imagePath
 
 document.getElementById("button-player-rock").addEventListener("click", playerClickRock)
@@ -37,31 +37,31 @@ const getComputerChoice = (playerChoice) => {
 
 const getOutcome = (playerChoice, computerChoice) => {
   if (playerChoice == 'rock' && computerChoice == 'rock') {
-    document.getElementById("image").src = "./src/img/rtr.jpg"
+    document.getElementById("image").src = "./img/rtr.jpg"
     return 'Rock breaks rock... it is a tie.'
   } else if (playerChoice == 'rock' && computerChoice == 'paper') {
-    document.getElementById("image").src = "./src/img/rlp.jpg"
+    document.getElementById("image").src = "./img/rlp.jpg"
     return 'Paper wraps rock.  You have lost.'
   } else if (playerChoice == 'rock' && computerChoice == 'scissors') {
-    document.getElementById("image").src = "./src/img/rbs.jpg"
+    document.getElementById("image").src = "./img/rbs.jpg"
     return 'Rock smashes scissors.  You win!'
   } else if (playerChoice == 'paper' && computerChoice == 'rock') {
-    document.getElementById("image").src = "./src/img/pbr.jpg"
+    document.getElementById("image").src = "./img/pbr.jpg"
     return 'Paper wraps rock.  You win!'
   } else if (playerChoice == 'paper' && computerChoice == 'paper') {
-    document.getElementById("image").src = "./src/img/ptp.jpg"
+    document.getElementById("image").src = "./img/ptp.jpg"
     return 'Paper slaps paper... it is a tie.'
   } else if (playerChoice == 'paper' && computerChoice == 'scissors') {
-    document.getElementById("image").src = "./src/img/pls.jpg"
+    document.getElementById("image").src = "./img/pls.jpg"
     return 'Scissors slice paper.  You have lost.'
   } else if (playerChoice == 'scissors' && computerChoice == 'rock') {
-    document.getElementById("image").src = "./src/img/slr.jpg"
+    document.getElementById("image").src = "./img/slr.jpg"
     return 'Rock smashes scissors.  You have lost'
   } else if (playerChoice == 'scissors' && computerChoice == 'paper') {
-    document.getElementById("image").src = "./src/img/sbp.jpg"
+    document.getElementById("image").src = "./img/sbp.jpg"
     return 'Scissors slice paper.  You win!'
   } else if (playerChoice == 'scissors' && computerChoice == 'scissors') {
-    document.getElementById("image").src = "./src/img/sts.jpg"
+    document.getElementById("image").src = "./img/sts.jpg"
     return 'Scissors jam scissors... it is a tie.'
   }
 }
