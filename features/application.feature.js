@@ -54,5 +54,18 @@ context('Your Description of the test scenario', () => {
     expect(content).to.contain('You chose scissors.');
   });
 
-
+  // Testing for game outcomes when player chooses Rock
+  it('click on Rock, computer chooses...?', async () => {
+    await browser.clickOnButton("button[id='button-player-rock']")
+    let contentRight = await browser.getContent("div[class='inner-right']")
+    let contentCenter = await browser.getContent("div[class='inner-center']")
+    if (contentRight == 'The Computer chooses rock.') {
+      expect(contentCenter).to.contain('Rock breaks rock... it is a tie.');
+    } else if (contentRight == 'The Computer chooses paper.') {
+      expect(contentCenter).to.contain('Paper wraps rock. You have lost.');
+    } else if (contentRight == 'The Computer chooses scissors.') {
+      expect(contentCenter).to.contain('Rock smashes scissors. You win!');
+    }
+  });
+  
 });
