@@ -1,33 +1,33 @@
 # Challenge: Rock Paper Scissors (RPS), the web game
+Developed by,
+* Max Aubain
 
-## Notes on branches
-* The repository for this project is located here: https://github.com/CA-ma/RPS_challenge_npm
-* _development_ is currently deployed with Netlify: https://ca-ma-rps.netlify.com/
-* _test_ is configured to run tests using End to End (e2e) Training Wheels: https://www.npmjs.com/package/e2e_training_wheels
-* _02_migrate_files_from_past_project_ includes files that were scripted originally by the author of this project but were initially committed in a different repository.  The commit history for these files can be found here: https://github.com/CA-ma/RPS_challenge
+## Notes on repository branches
+* The `development` branch is used to deploy [the application](https://ca-ma-rps.netlify.com/) with Netlify.
+* The `test` branch is configured to run unit and feature tests using [End to End (e2e) Training Wheels](https://www.npmjs.com/package/e2e_training_wheels).
+* The `02_migrate_files_from_past_project` branch includes files that were scripted originally by the author of this project but copied from another repository.  If you would like to see the detailed commit commit history for these files, they can be found [here](https://github.com/CA-ma/RPS_challenge/commits/05_see_outcome).
 
 ## Notes on the challenge
-This was a nights-and-weekends exercise to bring newly learned JS into practice and to be creative with the e2e Training Wheels NPM package.  This package can implement both unit and feature tests, so it was used by the author to,
-1. test the logic of the RPS game mechanics in the style of unit tests of specific functions, 'unit.spec.js', and
-2. test the messages that appear on the view that bring attention to the user choices and game outcomes, 'application.feature.js'.
-
-Pay particular attention to the unit tests as they test the inputs and outputs of the methods in 'app.js' as well as the statistical outcomes of the random number generator used to generate Rock, Paper, or Scissors.
+This was a nights-and-weekends exercise to design a simple web game in JS to be tested with a rigorous testing framework.  e2e Training Wheels can implement both unit and feature tests so it was used by the author to,
+1. Test the logic of the RPS game mechanics in the style of unit tests of specific methods in `/src/js/app.js`.  These unit tests are located in `/spec/unit.spec.js`.
+2. Test text that appears on the view that bring attention to user choices and game outcomes. These feature tests are located in `/features/application.feature.js`.
 
 ## Testing on your terminal
 1. Fork the project to a personal repository and clone to a local workspace.
-2. In the local workspace, install e2e Training Wheels using the following commands,
+2. In the local workspace, install e2e Training Wheels using [the automated protocol](https://www.npmjs.com/package/e2e_training_wheels#installation) with the following commands,
 ```
 $ npm init
 $ npm i e2e_training_wheels --save-dev
 $ node ./node_modules/e2e_training_wheels/dist/install.js
 ```
-3. FROM THE TEST BRANCH run,
+3. **WHILE SITUATED IN THE TEST BRANCH** use the command,
 ```
 $ npm test
 ```
-to run the feature and unit tests together.
+to run the feature tests and unit tests sequentially.
 
 ## User stories for BDD
+User stories were drafted to guide the scripting process in a Behavior Driven Design (BDD) framework.
 ```
 As a player of Rock Paper Scissors (RPS),
 In order to know what game I am playing,
@@ -47,8 +47,5 @@ In order to see the outcome of the round,
 I want to have a visual cue of who is the winner.
 ```
 
-## Authors
-Max Aubain
-
 ## Acknowledgements
-Thank you to Craft Academy for organizing this challenge.
+Thank you to Craft Academy in Stockholm, Sweden for organizing and providing feedback on this challenge.
