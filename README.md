@@ -68,10 +68,10 @@ In accordance with the first three user stories, the UI is developed first with 
 Upon running `$ npm test` in the [`test`](https://github.com/CA-ma/RPS_challenge_npm/tree/test) branch, the passing of these unit tests, and feature test contained in [`/features/application.feature.js`](/features/application.feature.js) with all four user stories, is confirmed.
 
 **Feature Test Results**<br>
-<img src="src/img/feature_test_result.png" style="width: 650px; min-width: 650px; height: 300px; min-height: 300px">
+<img src="src/img/feature_test_result.png" style="width: 350px; min-width: 650px; height: 300px; min-height: 300px">
 
 **Unit Test Results**<br>
-![unit tests](/src/img/unit_test_result.png) 
+![unit tests](/src/img/unit_test_result.png | width=350) 
 
 The last set of unit tests are effective, while perhaps non-standard, at testing for a random outcome.  For example, 'returns rock approx 1/3 of the time` is checking for the computerChoice 'rock' in 300 trials.  Given 300 trials and a random outcome that has a probability of happening 1/3 of the time, the mean should then =100.  We cannot test the mean without undue computational resources, and so the tests pass if the number of times 'rock' is randomly chosen is above 80 and below 120 for any single test.  Occationally, this test will fail during a statistical outlier event, for example, when 'rock' is chosen by the computer 76 times out of 300, but this does not mean that the code is working improperly.
 
