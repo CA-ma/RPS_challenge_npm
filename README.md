@@ -18,7 +18,7 @@ If you have never played RPS, the game pits two players against each other in fi
 ## Deployment
 The [Rock Paper Scissors!](https://ca-ma-rps.netlify.com/) game is deployed from the [`development`](https://github.com/CA-ma/RPS_challenge_npm/tree/development) branch of this repository using Netlify services.  The game receives inputs from the user as 'Player 1' using the buttons on the left.  When a choice is selected, text messages display to show the computer response and the winner of the round, and the center image is swapped to reflect the choices of the player and the computer.
 
-![home page view](/src/img/home_page_view.png) 
+<img src="src/img/home_page_view.png" style="width: 600px; min-width: 600px; height: 350px; min-height: 350px">
 
 ## Building, Development, and Testing
 To locally run or test this application, fork this repository to your github account and clone to a local workspace.  The following instructions (for Mac OS terminal) will configure your local workspace with the necessary package manager and packages.  You can also refer to the e2e Training Wheels [installation guidelines](https://www.npmjs.com/package/e2e_training_wheels#installation).
@@ -68,7 +68,7 @@ In accordance with the first three user stories, the UI is developed first with 
 Upon running `$ npm test` in the [`test`](https://github.com/CA-ma/RPS_challenge_npm/tree/test) branch, the passing of these unit tests, and feature test contained in [`/features/application.feature.js`](/features/application.feature.js) with all four user stories, is confirmed.
 
 **Feature Test Results**<br>
-![feature tests](/src/img/feature_test_result.png) 
+<img src="src/img/feature_test_result.png" style="width: 650px; min-width: 650px; height: 300px; min-height: 300px">
 
 **Unit Test Results**<br>
 ![unit tests](/src/img/unit_test_result.png) 
