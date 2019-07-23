@@ -65,7 +65,7 @@ In accordance with the first three user stories, the UI is developed first with 
 2. `getComputerChoice` is a compound method that receives `playerChoice` as an input, generates the `computerChoice` as 'rock', 'paper', or 'scissors', and calls `getOutcome` to compare `playerChoice` to `computerChoice`.
 3. `getComputerChoice` is refactored to generate `computerChoice` with a random variable instead of a fixed value.
 
-Upon running `$ npm test` in the `test` branch, the passing of these unit tests, and feature test contained in [`/features/application.feature.js`](/features/application.feature.js) with all four user stories, is confirmed.
+Upon running `$ npm test` in the [`test`](https://github.com/CA-ma/RPS_challenge_npm/tree/test) branch, the passing of these unit tests, and feature test contained in [`/features/application.feature.js`](/features/application.feature.js) with all four user stories, is confirmed.
 
 **Feature Test Results**<br>
 ![feature tests](/src/img/feature_test_result.png) 
